@@ -23,7 +23,7 @@ export default function Nav() {
     <>
       <nav>
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logo.svg" alt="Oliveraie de Montpellier" />
+          <img src="/logo.png" alt="Oliveraie de Montpellier" />
           <div>
             <div className="nav-logo-text">Oliveraie de Montpellier</div>
             <div className="nav-logo-sub">Vierge Extra · Origine France · Bio en certification</div>
