@@ -6,7 +6,7 @@ export default function NavSub({ subtitle }) {
   return (
     <nav className="nav-sub">
       <Link to="/" className="nav-logo">
-        <img src="/logo.svg" alt="Oliverie de Montpellier" />
+        <img src="/logo.png" alt="Oliveraie de Montpellier" />
         <div>
           <div className="nav-logo-text">Oliverie de Montpellier</div>
           <div className="nav-logo-sub">{subtitle}</div>

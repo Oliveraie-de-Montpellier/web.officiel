@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
-          <img src="/logo.svg" alt="Oliveraie de Montpellier" style={{ height: 50, width: 'auto', marginBottom: '0.5rem' }} />
+          <img src="/logo.png" alt="Oliveraie de Montpellier" style={{ height: 56, width: 56, objectFit: 'cover', borderRadius: '50%', marginBottom: '0.5rem' }} />
           <div className="footer-logo">Oliveraie de Montpellier</div>
           <div className="footer-tagline">Vierge Extra · Origine France · Bio en certification</div>
           <p className="footer-brand-desc">
