@@ -507,14 +507,58 @@ footer { background: #0d150a; color: rgba(245,240,232,0.6); padding: 4rem 3rem 2
 .cart-total span:last-child { color: var(--olive); }
 .cart-empty { text-align: center; padding: 2rem; color: var(--text-mid); font-style: italic; }
 
-/* RESPONSIVE */
+/* ===================== HAMBURGER MENU ===================== */
+.nav-mobile-controls { display: none; align-items: center; gap: 0.5rem; }
+.nav-cart-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--cream); font-size: 0.9rem; display: flex; align-items: center; gap: 4px; padding: 6px 10px;
+}
+.nav-hamburger {
+  display: flex; flex-direction: column; justify-content: center; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 8px; width: 40px; height: 40px;
+}
+.nav-hamburger span {
+  display: block; height: 2px; background: var(--cream); border-radius: 2px;
+  transition: all 0.25s ease; width: 100%;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile-menu {
+  position: fixed; top: 72px; left: 0; right: 0; z-index: 999;
+  background: rgba(30,42,18,0.98); backdrop-filter: blur(12px);
+  display: flex; flex-direction: column;
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+  animation: slideDown 0.2s ease;
+}
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+.nav-mobile-link {
+  color: var(--cream); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px;
+  text-transform: uppercase; padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(201,168,76,0.1); font-weight: 500;
+  transition: background 0.15s;
+}
+.nav-mobile-link:hover, .nav-mobile-link.active { background: rgba(201,168,76,0.1); color: var(--gold); }
+.nav-mobile-cart {
+  background: var(--gold); color: var(--olive-dark); border: none; cursor: pointer;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 1rem 1.5rem; text-align: left; display: flex; align-items: center; gap: 8px;
+}
+
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px) {
-  .hero-content { grid-template-columns: 1fr; }
+  .hero-content { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
   .about-grid, .contact-grid, .loc-grid, .assistance-grid { grid-template-columns: 1fr; }
   .products-grid, .pro-products { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  nav { padding: 0 1.5rem; }
+  nav { padding: 0 1.2rem; }
   .nav-links { display: none; }
+  .nav-mobile-controls { display: flex; }
+  .nav-logo-sub { display: none; }
+  .hero-badge { letter-spacing: 1px; font-size: 0.62rem; padding: 5px 12px; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .hero-badge-aop { width: 70px; height: 70px; font-size: 0.48rem; top: -10px; right: -10px; }
   section { padding: 4rem 1.5rem; }
   .visite-intro { grid-template-columns: 1fr; }
   .restaurant-cards { grid-template-columns: 1fr; }
@@ -524,6 +568,11 @@ footer { background: #0d150a; color: rgba(245,240,232,0.6); padding: 4rem 3rem 2
 @media (max-width: 600px) {
   .products-grid, .pro-products { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; flex-wrap: unset; }
+  .stat-num { font-size: 1.5rem; }
+  .stat-label { font-size: 0.55rem; letter-spacing: 0.5px; }
+  .hero-badge { font-size: 0.58rem; letter-spacing: 0.5px; padding: 4px 10px; }
+  .hero-content { padding: 1.5rem 1rem; }
 }
 
 /* ANIMATIONS */

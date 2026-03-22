@@ -1,6 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <circle cx="32" cy="32" r="30" fill="#4a5e2a"/>
-  <ellipse cx="32" cy="34" rx="14" ry="16" fill="#7a9440"/>
-  <ellipse cx="32" cy="30" rx="10" ry="12" fill="#c9a84c"/>
-  <path d="M20 38 Q32 28 44 38 Q32 48 20 38" fill="#2d3a1e" opacity="0.3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fond cercle sombre -->
+  <circle cx="32" cy="32" r="32" fill="#2d3a1e"/>
+  <!-- Anneau doré -->
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+  <!-- Tige principale -->
+  <line x1="32" y1="46" x2="32" y2="16" stroke="#7a9440" stroke-width="2" stroke-linecap="round"/>
+  <!-- Feuille gauche haute -->
+  <ellipse cx="25" cy="22" rx="8" ry="3.5" fill="#7a9440" transform="rotate(-35 25 22)"/>
+  <!-- Feuille droite haute -->
+  <ellipse cx="39" cy="22" rx="8" ry="3.5" fill="#5a7230" transform="rotate(35 39 22)"/>
+  <!-- Feuille gauche basse -->
+  <ellipse cx="24" cy="32" rx="8" ry="3.5" fill="#7a9440" transform="rotate(-25 24 32)"/>
+  <!-- Feuille droite basse -->
+  <ellipse cx="40" cy="30" rx="7" ry="3" fill="#5a7230" transform="rotate(25 40 30)"/>
+  <!-- Olive (fruit) dorée -->
+  <ellipse cx="32" cy="42" rx="5" ry="7" fill="#c9a84c"/>
+  <ellipse cx="31" cy="40" rx="2.5" ry="3.5" fill="#e8c96a" opacity="0.5"/>
+  <!-- Point olive -->
+  <circle cx="32" cy="38" r="1.5" fill="#2d3a1e" opacity="0.6"/>
 </svg>
