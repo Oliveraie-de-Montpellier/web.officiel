@@ -5,7 +5,8 @@ const CERTIFS = [
     priority: 'P0',
     status: 'done',
     statusLabel: 'Obtenu',
-    icon: '✅',
+    logo: '/certifs/vierge-extra.svg',
+    logoAlt: 'Huile d\'olive vierge extra — Règlement UE',
     title: 'Conformité Vierge Extra + Analyses',
     subtitle: 'Catégorie réglementée UE — Règlement (UE) 2022/2104',
     desc: "La mention 'Huile d'olive vierge extra' est une catégorie réglementée par l'Union européenne. Pour la revendiquer légalement, chaque lot doit satisfaire des analyses physico-chimiques (acidité ≤ 0,8 g/100 g, indice K232, K270, etc.) et un panel test organoleptique officiel. C'est la fondation de toute notre stratégie qualité.",
@@ -24,7 +25,8 @@ const CERTIFS = [
     priority: 'P1',
     status: 'progress',
     statusLabel: 'En cours — Conversion 2 ans',
-    icon: '🌱',
+    logo: '/certifs/eurofeuille-ab.svg',
+    logoAlt: 'Logo Eurofeuille + AB Agriculture Biologique',
     title: 'Agriculture Biologique — AB / Eurofeuille',
     subtitle: 'Certification réglementée — Règlement (UE) 2018/848',
     desc: "La certification Bio est notre priorité n°1 après la conformité Vierge Extra. Elle couvre l'ensemble de la chaîne : verger, trituration, stockage et conditionnement. Le logo Eurofeuille est obligatoire sur les produits biologiques préemballés de l'Union européenne ; la marque AB française est complémentaire. La conversion dure 2 ans incompressibles — nous avons engagé la démarche.",
@@ -44,7 +46,8 @@ const CERTIFS = [
     priority: 'P1c',
     status: 'conditional',
     statusLabel: 'Conditionnel — Audit en cours',
-    icon: '🔍',
+    logo: '/certifs/aop-languedoc.svg',
+    logoAlt: 'Logo AOP INAO Languedoc',
     title: 'AOP Huile d\'Olive du Languedoc',
     subtitle: "Signe officiel d'origine — Créée en octobre 2023",
     desc: "L'AOP Huile d'Olive du Languedoc, créée en octobre 2023, est une fenêtre d'opportunité rare : moins de 50 producteurs habilités à ce jour, marché non saturé. Elle autorise une revendication d'origine géographique précise et soutient un prix de vente premium. Elle est conditionnée à l'éligibilité cadastrale et variétale de notre verger, actuellement en cours de vérification.",
@@ -64,7 +67,8 @@ const CERTIFS = [
     priority: 'P2',
     status: 'future',
     statusLabel: 'Option — Phase 2 (2028+)',
-    icon: '⏳',
+    logo: '/certifs/hve.svg',
+    logoAlt: 'Logo HVE Haute Valeur Environnementale',
     title: 'HVE — Haute Valeur Environnementale',
     subtitle: 'Certification d\'exploitation agricole',
     desc: "La HVE valorise la performance environnementale globale d'une exploitation : biodiversité, gestion des pratiques, impact environnemental. Pour un domaine ouvert au public, elle renforce le discours pédagogique et institutionnel. Pertinente surtout si la certification Bio est retardée ; à envisager en phase 2.",
@@ -114,9 +118,9 @@ export default function Certifications() {
             return (
               <div key={c.priority} style={{ background: c.bg, border: `1px solid ${c.border}`, borderRadius: 10, padding: '1.8rem 2rem' }}>
                 <div style={{ display: 'flex', gap: '1.2rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                  <div style={{ minWidth: 48, textAlign: 'center' }}>
-                    <div style={{ fontSize: '2rem', lineHeight: 1 }}>{c.icon}</div>
-                    <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '1px', color: c.color, textTransform: 'uppercase', marginTop: 4 }}>{c.priority}</div>
+                  <div style={{ minWidth: 64, textAlign: 'center' }}>
+                    <img src={c.logo} alt={c.logoAlt} style={{ width: 64, height: 64, display: 'block', margin: '0 auto' }} />
+                    <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '1px', color: c.color, textTransform: 'uppercase', marginTop: 6 }}>{c.priority}</div>
                   </div>
                   <div style={{ flex: 1, minWidth: 280 }}>
                     <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', flexWrap: 'wrap', marginBottom: '0.4rem' }}>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <!-- Hexagone bordeaux (style INAO) -->
+  <polygon points="35,4 62,19.5 62,50.5 35,66 8,50.5 8,19.5" fill="#8B1A1A"/>
+  <!-- Bordure dorée interne -->
+  <polygon points="35,8 58,22 58,48 35,62 12,48 12,22" fill="none" stroke="#e8c96a" stroke-width="1.2"/>
+  <!-- Ligne décorative haut -->
+  <line x1="19" y1="27" x2="51" y2="27" stroke="#e8c96a" stroke-width="0.7" opacity="0.7"/>
+  <!-- Texte AOP -->
+  <text x="35" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="white" letter-spacing="2">AOP</text>
+  <!-- Ligne décorative bas -->
+  <line x1="19" y1="46" x2="51" y2="46" stroke="#e8c96a" stroke-width="0.7" opacity="0.7"/>
+  <!-- INAO -->
+  <text x="35" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" fill="#e8c96a" letter-spacing="3">INAO</text>
+  <!-- Languedoc -->
+  <text x="35" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.5" fill="white" letter-spacing="1" opacity="0.85">Languedoc</text>
+</svg>

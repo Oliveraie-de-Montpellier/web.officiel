@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <!-- Fond vert EU Bio -->
+  <rect width="70" height="70" rx="6" fill="#488F2E"/>
+  <!-- 12 étoiles blanches en forme de feuille (Eurofeuille) -->
+  <!-- Étoile 5 branches : path centré en (0,0), r_ext=2.8, r_int=1.1 -->
+  <!-- M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9 Z -->
+  <!-- Positions feuille ovale centrée en (35,31) -->
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(35,9)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(44,12)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(51,20)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(53,31)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(51,42)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(44,50)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(35,53)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(26,50)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(19,42)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(17,31)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(19,20)"/>
+  <path d="M0,-2.8 L0.65,-0.9 L2.66,-0.86 L1.07,0.35 L1.65,2.27 L0,1.1 L-1.65,2.27 L-1.07,0.35 L-2.66,-0.86 L-0.65,-0.9Z" fill="white" transform="translate(26,12)"/>
+  <!-- AB en bas -->
+  <text x="35" y="65" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="11" font-weight="900" fill="white" letter-spacing="2">AB</text>
+</svg>
