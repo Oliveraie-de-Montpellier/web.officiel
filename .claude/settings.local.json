@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /tmp)",
+      "Bash(cp \"C:\\\\Users\\\\joelh\\\\OneDrive\\\\Documents\\\\Projet Huile d''''olive artisanale\\\\livrables recherches label\\\\Note_Synthese_Executive_OliveraiedeMontpellier.docx\" note_synthese.zip)",
+      "Bash(unzip -o note_synthese.zip word/document.xml -d note_out)",
+      "Bash(npm --version)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s http://localhost:5174)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
