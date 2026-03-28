@@ -16,5 +16,10 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
     "vite": "^5.0.0"
-  }
+  },
+  "description": "Site web de l'Oliverie de Montpellier, migré de HTML/JS vers React.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
