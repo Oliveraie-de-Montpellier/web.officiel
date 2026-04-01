@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useCart } from '../../contexts/CartContext'
+import logo from "../../assets/logo.png"
 
 const NAV_LINKS = [
   { to: '/', label: 'Accueil' },
@@ -23,7 +24,7 @@ export default function Nav() {
     <>
       <nav>
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logo.png" alt="Oliveraie de Montpellier" />
+          <img src={logo} alt="Oliveraie de Montpellier" />
           <div>
             <div className="nav-logo-text">Oliveraie de Montpellier</div>
             <div className="nav-logo-sub">Vierge Extra · Origine France · Bio en certification</div>
