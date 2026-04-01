@@ -1,4 +1,5 @@
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, useLocation } from 'react-router-dom'
+import { useEffect, useState } from "react"
 import { products } from '../data/products'
 import ProductCard from '../components/ui/ProductCard'
 import CartBar from '../components/cart/CartBar'
@@ -14,8 +15,13 @@ const VALID_FILTERS = FILTERS.map((f) => f.id)
 
 export default function Shop() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('query') ?? "")
   const rawFilter = searchParams.get('filtre') ?? 'tous'
   const filter = VALID_FILTERS.includes(rawFilter) ? rawFilter : 'tous'
+
+  useEffect(() => {
+    setSearchTerm(s => searchParams.get('query') ?? s)
+  }, [searchParams])
 
   const setFilter = (id) => {
     if (id === 'tous') {
@@ -24,10 +30,24 @@ export default function Shop() {
       setSearchParams({ filtre: id })
     }
   }
+  
+  const normalize = (str) => {
+    return str
+      .normalize('NFD')                 // 1. split accents from letters
+      .replace(/[\u0300-\u036f]/g, '')  // 2. remove accents
+      .replace(/[^a-zA-Z0-9]/g, '')     // 3. remove special chars + spaces
+      .toLowerCase()                   // 4. lowercase
+  }
 
   const filtered = filter === 'tous'
-    ? products
-    : products.filter((p) => p.filter === filter)
+    ? products.filter((p) => {
+      return normalize(searchTerm) === "" ? true : ( normalize(p.name).includes(normalize(searchTerm)) )
+    })
+    : products.filter((p) => {
+      const normSearchTerm = normalize(searchTerm)
+      return ( normSearchTerm === "" ) ? ( p.filter === filter ) : ( p.filter === filter && normalize(p.name).includes(normSearchTerm) )
+    })
+
 
   return (
     <section id="particuliers" style={{ paddingTop: 72 }}>
@@ -37,6 +57,21 @@ export default function Shop() {
         <p style={{ color: 'var(--text-mid)', fontSize: '0.95rem', maxWidth: 600, lineHeight: 1.8, marginBottom: '2rem' }}>
           Huiles d'olive vierge extra produites mécaniquement à froid, sans additifs. Récolte d'octobre à décembre — olives cueillies à la main sur nos 500 oliviers centenaires. Chaque lot est numéroté et tracé de l'arbre à la bouteille.
         </p>
+        <div className="search-container">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Rechercher un produit..."
+            value={searchTerm}
+            onChange={(e) => {
+              setSearchParams(sp => {
+                sp.set("query", e.target.value)
+                return sp
+              })
+              setSearchTerm(e.target.value)
+            }}
+          />
+        </div>
         <div className="products-filter">
           {FILTERS.map((f) => (
             <button

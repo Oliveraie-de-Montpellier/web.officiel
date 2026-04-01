@@ -253,6 +253,32 @@ section { padding: 6rem 3rem; }
 
 /* PRODUITS */
 #particuliers { background: var(--white); }
+
+/* begin not AI */
+.search-container {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px; /* Adjust based on your layout */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid var(--cream-dark);
+  background: white;
+  border-radius: 25px; /* Matches the rounded vibe of the filters */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: var(--text-mid);
+  opacity: 0.6;
+}
+/* end not AI */
 .products-filter { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem; }
 .filter-btn {
   padding: 8px 20px; border: 1px solid var(--cream-dark);
@@ -509,6 +535,9 @@ footer { background: #0d150a; color: rgba(245,240,232,0.6); padding: 4rem 3rem 2
 
 /* ===================== HAMBURGER MENU ===================== */
 .nav-mobile-controls { display: none; align-items: center; gap: 0.5rem; }
+
+.nav-logo-sub { font-size: .4rem;} /* not AI */
+
 .nav-cart-btn {
   background: none; border: none; cursor: pointer;
   color: var(--cream); font-size: 0.9rem; display: flex; align-items: center; gap: 4px; padding: 6px 10px;

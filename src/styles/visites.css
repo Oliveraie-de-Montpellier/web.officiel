@@ -5,6 +5,9 @@
   padding: 0 2rem; height: 72px;
   border-bottom: 1px solid rgba(201,168,76,0.3);
 }
+
+.nav-sub button { position: relative; top: 0.9rem; } /* not AI */ 
+
 .nav-sub .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .nav-sub .nav-logo img { height: 44px; width: auto; }
 .nav-sub .nav-logo-text { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
