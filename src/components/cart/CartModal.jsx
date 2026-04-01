@@ -46,7 +46,7 @@ export default function CartModal() {
                 <div key={i.name} className="cart-item">
                   <div className="cart-item-emoji" style={{position: "relative", top: "-.5rem"}}>{i.emoji}</div>
                   <div style={{ flex: 1 }}>
-                    <div className="cart-item-name">{i.name}</div>
+                    <div className="cart-item-name" style={{marginBottom: ".4rem"}}>{i.name}</div>
                     <div className="cart-item-price" style={{display: "inline-block"}}>
                       {i.qty} × {i.price.toFixed(2)} €
                     </div>
