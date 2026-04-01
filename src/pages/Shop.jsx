@@ -1,4 +1,4 @@
-import { useSearchParams, useLocation } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
 import { products } from '../data/products'
 import ProductCard from '../components/ui/ProductCard'

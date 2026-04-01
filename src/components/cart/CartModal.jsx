@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useCart } from '../../contexts/CartContext'
 
 export default function CartModal() {
-  const { cart, totalAmount, clearCart, closeCart, isCartOpen } = useCart()
+  const { cart, totalAmount, clearCart, closeCart, isCartOpen, updateQty } = useCart()
   const [confirmed, setConfirmed] = useState(false)
 
   const handleOverlayClick = (e) => {
@@ -44,15 +44,23 @@ export default function CartModal() {
             <div>
               {cart.map((i) => (
                 <div key={i.name} className="cart-item">
-                  <div className="cart-item-emoji">{i.emoji}</div>
+                  <div className="cart-item-emoji" style={{position: "relative", top: "-.5rem"}}>{i.emoji}</div>
                   <div style={{ flex: 1 }}>
                     <div className="cart-item-name">{i.name}</div>
-                    <div className="cart-item-price">
+                    <div className="cart-item-price" style={{display: "inline-block"}}>
                       {i.qty} × {i.price.toFixed(2)} €
                     </div>
+                    <div className="qty-selector" style={{display: "inline-block", marginLeft: "1rem"}}>
+                      <button type="button" className="qty-btn" style={{display: "inline-block"}} onClick={() => {updateQty(i.name, i.qty-1)}}>−</button>
+                      <span className="qty-val" style={{display: "inline-block"}}>{i.qty}</span>
+                      <button type="button" className="qty-btn" style={{display: "inline-block"}} onClick={() => {updateQty(i.name, i.qty+1)}}>+</button>
+                    </div>
                   </div>
-                  <div style={{ fontWeight: 700, color: 'var(--olive-dark)' }}>
-                    {(i.price * i.qty).toFixed(2)} €
+                  <div style={{position: "relative", top: "-.8rem"}}>
+                    <button style={{scale: "0.6"}} type="button" className="modal-close" onClick={() => {updateQty(i.name, 0)}} aria-label="enlever du panier">✕</button>
+                    <div style={{ fontWeight: 700, color: 'var(--olive-dark)' }}>
+                      {(i.price * i.qty).toFixed(2)} €
+                    </div>
                   </div>
                 </div>
               ))}
