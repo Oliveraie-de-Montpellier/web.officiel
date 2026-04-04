@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useCart } from '../../contexts/CartContext'
 import logo from "../../assets/logo.png"
 
@@ -34,7 +34,7 @@ export default function Nav() {
         {/* Liens desktop */}
         <div className="nav-links">
           {NAV_LINKS.map((l) => (
-            <Link key={l.to} to={l.to}>{l.label}</Link>
+            <NavLink key={l.to} to={l.to} style={({isActive})=>({ color: isActive ? "var(--gold)" : undefined, borderBottomColor: isActive ? "var(--gold)" : undefined})}>{l.label}</NavLink>
           ))}
           <button type="button" className="nav-cta" onClick={openCart} style={{ border: 'none', background: 'none', cursor: 'pointer', height: 72, padding: '0 1.2rem', display: 'flex', alignItems: 'center' }}>
             🛒 Panier <span className="cart-count">{totalCount}</span>
