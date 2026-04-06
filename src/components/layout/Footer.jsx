@@ -33,11 +33,11 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Produits</h4>
           <ul>
-            <li><Link to={`/boutique?filtre=&query=${encodeURIComponent("Cuvée Arrière-Grand-Père")}`}>Cuvée Arrière-Grand-Père</Link></li>
-            <li><Link to={`/boutique?filtre=&query=${encodeURIComponent("Récolte Hivernale")}`}>Récolte Hivernale</Link></li>
-            <li><Link to="/boutique?query=&filtre=edition">Prestige Centenaire — Édition Limitée</Link></li>
-            <li><Link to="/boutique?query=&filtre=coffret">Coffrets Cadeaux</Link></li>
-            <li><Link to="/boutique?query=&filtre=vie">Huile Vierge Extra</Link></li>
+            <li><Link onClick={() => window.scrollTo(0, 0)} to={`/boutique?filtre=&query=${encodeURIComponent("Cuvée Arrière-Grand-Père")}`}>Cuvée Arrière-Grand-Père</Link></li>
+            <li><Link onClick={() => window.scrollTo(0, 0)} to={`/boutique?filtre=&query=${encodeURIComponent("Récolte Hivernale")}`}>Récolte Hivernale</Link></li>
+            <li><Link onClick={() => window.scrollTo(0, 0)} to="/boutique?query=&filtre=edition">Prestige Centenaire — Édition Limitée</Link></li>
+            <li><Link onClick={() => window.scrollTo(0, 0)} to="/boutique?query=&filtre=coffret">Coffrets Cadeaux</Link></li>
+            <li><Link onClick={() => window.scrollTo(0, 0)} to="/boutique?query=&filtre=vie">Huile Vierge Extra</Link></li>
             <li><Link to="/professionnels">Solutions Professionnelles</Link></li>
           </ul>
         </div>

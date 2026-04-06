@@ -15,6 +15,7 @@ import Parrainage from './pages/Parrainage'
 import VisiteDecouverte from './pages/VisiteDecouverte'
 import ExperienceComplete from './pages/ExperienceComplete'
 import EspaceEnfants from './pages/EspaceEnfants'
+import CartAlert from './components/ui/CartAlert'
 
 function SubLayout({ subtitle, children }) {
   return (
@@ -29,6 +30,7 @@ function SubLayout({ subtitle, children }) {
 export default function App() {
   return (
     <>
+      <CartAlert/>
       <ScrollToTop />
       <CartModal />
       <Routes>

@@ -344,6 +344,21 @@ section { padding: 6rem 3rem; }
 .review-author { font-size: 0.65rem; color: var(--olive-light); margin-top: 0.2rem; }
 
 /* PANIER */
+/* begin not AI */
+.cart-alert {
+  /* border: solid white 1px; */
+  /* display: none; */
+  border-radius: 1.5rem;
+  padding: .5rem .7rem;
+  background: #c4e5f6;
+  position: fixed;
+  top:5rem;
+  right: 1svw;
+  z-index: 1001;
+  color: #000e0e;
+  box-shadow: rgb(0, 213, 255) 0 0 30px -13px;
+}
+/* end not AI */
 .cart-bar {
   position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
   background: var(--olive-dark); color: var(--cream);
@@ -606,7 +621,11 @@ footer { background: #0d150a; color: rgba(245,240,232,0.6); padding: 4rem 3rem 2
 
 /* ANIMATIONS */
 .fade-up { opacity: 0; transform: translateY(30px); animation: fadeUp 0.7s ease forwards; }
+.fade-down { opacity: 0; transform: translateY(-30px); animation: fadeUp 0.7s ease forwards; }
+.fade-out { opacity: 1; transform: translateY(0); animation: fadeOut 0.7s ease forwards; }
 @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+@keyframes fadeOut { to { opacity: 0; } }
 .fade-up-1 { animation-delay: 0.1s; }
 .fade-up-2 { animation-delay: 0.25s; }
 .fade-up-3 { animation-delay: 0.4s; }

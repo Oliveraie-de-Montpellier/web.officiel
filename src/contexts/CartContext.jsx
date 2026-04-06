@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useContext, useState, useEffect, useRef } from 'react'
 
 const CartContext = createContext(null)
 
@@ -6,6 +6,7 @@ const STORAGE_KEY = 'olive-cart'
 
 export function CartProvider({ children }) {
   const [isCartOpen, setIsCartOpen] = useState(false)
+  const [alertIsActive, setAlertIsActive] = useState({var: false, key: 0, fadeOut: false, name: "", qty: 0})
   const [cart, setCart] = useState(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY)
@@ -65,6 +66,8 @@ export function CartProvider({ children }) {
         isCartOpen,
         openCart,
         closeCart,
+        alertIsActive,
+        setAlertIsActive,
       }}
     >
       {children}
@@ -77,3 +80,4 @@ export function useCart() {
   if (!ctx) throw new Error('useCart must be used within CartProvider')
   return ctx
 }
+

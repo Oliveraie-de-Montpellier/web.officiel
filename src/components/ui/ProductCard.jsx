@@ -3,11 +3,11 @@ import { useCart } from '../../contexts/CartContext'
 
 export default function ProductCard({ product }) {
   const [qty, setQty] = useState(1)
-  const { addToCart } = useCart()
+  const { addToCart, setAlertIsActive, alertIsActive } = useCart()
 
   const handleAddToCart = () => {
     addToCart(product.name, product.price, product.emoji, qty)
-    alert(`${product.name} ajouté au panier ! 🫒`)
+    setAlertIsActive(a => ({var: true, key: a.key + 1, name: product.name, qty}))
   }
 
   return (
