@@ -87,14 +87,14 @@ nav {
 }
 .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(201,168,76,0.4); }
 .btn-outline {
-  background: transparent; color: var(--cream);
-  padding: 14px 32px; border: 1px solid rgba(245,240,232,0.3); border-radius: 2px;
+  background: transparent; color: var(--gold);
+  padding: 14px 32px; border: 1px solid var(--gold); border-radius: 2px;
   font-family: 'Montserrat', sans-serif; font-weight: 500;
   font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;
   cursor: pointer; text-decoration: none;
   transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;
 }
-.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-outline:hover { border-color: var(--gold-light); color: var(--gold-light); }
 .hero-image-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
 .team-photo-mock {
   width: 100%; max-width: 560px;
