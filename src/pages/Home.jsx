@@ -129,25 +129,12 @@ export default function Home() {
           <div className="section-tag">Nous trouver</div>
           <h2 className="section-title">Notre <em>domaine</em> à Montpellier</h2>
           <div className="loc-grid">
-            <div className="map-embed" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#f5f0e8', border: '1px solid var(--cream-dark)', borderRadius: 8, gap: '1rem', padding: '2rem' }}>
-              <div style={{ fontSize: '3rem' }}>🗺️</div>
-              <p style={{ color: 'var(--text-mid)', fontSize: '0.9rem', textAlign: 'center', lineHeight: 1.6 }}>
-                <strong style={{ color: 'var(--olive-dark)' }}>Oliveraie de Montpellier</strong><br />
-                Chemin des Oliviers de l'Héritage<br />
-                34000 Montpellier, Hérault — France
-              </p>
-              <a
-                href="https://www.google.com/maps/search/Montpellier+H%C3%A9rault+France"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-                style={{ fontSize: '0.82rem' }}
-              >
-                📍 Voir sur Google Maps
-              </a>
-              <p style={{ fontSize: '0.72rem', color: 'var(--text-mid)', textAlign: 'center' }}>
-                Accès GPS : coordonnées précises communiquées à la confirmation de réservation
-              </p>
+            <div className="map-embed" >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46256.27!2d3.8767!3d43.6109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af42a3e89ee7%3A0x7c66d0d3eacc6773!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation Oliverie de Montpellier"></iframe>
             </div>
             <div className="loc-info">
               <div className="loc-card">
