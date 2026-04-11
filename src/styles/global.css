@@ -28,8 +28,8 @@ nav {
   border-bottom: 3px solid transparent; transition: all 0.2s; font-weight: 500;
 }
 .nav-links a:hover { color: var(--gold); border-bottom-color: var(--gold); }
-.nav-cta { background: var(--gold); color: var(--olive-dark) !important; border-radius: 2px; font-weight: 600 !important; border-bottom: none !important; }
-.nav-cta:hover { background: var(--gold-light) !important; }
+.nav-cta { background: var(--gold); color: white !important; border-radius: 2px; font-weight: 600 !important; border-bottom: none !important; }
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--olive-dark) !important; }
 
 /* ===================== HERO ===================== */
 #accueil {
