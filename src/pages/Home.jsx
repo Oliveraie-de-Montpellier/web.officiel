@@ -198,7 +198,7 @@ export default function Home() {
                 <div className="contact-icon"><InstaIcon style={{width: "1.4rem", marginRight: ".6rem", position: "relative", top: ".2rem"}}/></div>
                 <div className="contact-detail">
                   <h4>Réseaux</h4>
-                  <a href="https://www.instagram.com/oliveraie_de_montpellier?igsh=eWgyeHI0amxoanNh"><p>rejoignez-nous sur instagram !</p></a>
+                  <a style={{textDecoration: "none"}} href="https://www.instagram.com/oliveraie_de_montpellier?igsh=eWgyeHI0amxoanNh"><p>rejoignez-nous sur instagram !</p></a>
                 </div>
               </div>
             </div>
