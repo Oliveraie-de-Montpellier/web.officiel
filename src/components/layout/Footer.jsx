@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="footer-contact-row">✉️ <a href="mailto:contact@oliviersheritage.fr">contact@oliviersheritage.fr</a></div>
           <div className="footer-contact-row">✉️ <a href="mailto:contact@oliviersheritage.fr">contact@oliviersheritage.fr</a></div>
           <div className="footer-contact-row"><a href="https://www.instagram.com/oliveraie_de_montpellier?igsh=eWgyeHI0amxoanNh">
-            <InstaIcon style={{width: "1rem", marginRight: ".4rem"}}/> rejoignez nous
+            <InstaIcon style={{width: "1rem", marginRight: ".4rem", position: "relative", top: ".2rem"}}/> rejoignez nous
           </a></div>
 
         </div>

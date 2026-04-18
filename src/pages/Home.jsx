@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ContactForm from '../components/forms/ContactForm'
+import InstaIcon from '../components/ui/InstaIcon'
 
 export default function Home() {
   return (
@@ -133,7 +134,7 @@ export default function Home() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46256.27!2d3.8767!3d43.6109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af42a3e89ee7%3A0x7c66d0d3eacc6773!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Localisation Oliverie de Montpellier"></iframe>
             </div>
             <div className="loc-info">
@@ -191,6 +192,13 @@ export default function Home() {
                 <div className="contact-detail">
                   <h4>Adresse</h4>
                   <p>Chemin des Oliviers de l'Héritage<br />34000 Montpellier, France</p>
+                </div>
+              </div>
+              <div className="contact-row">
+                <div className="contact-icon"><InstaIcon style={{width: "1.4rem", marginRight: ".6rem", position: "relative", top: ".2rem"}}/></div>
+                <div className="contact-detail">
+                  <h4>Réseaux</h4>
+                  <p>rejoignez-nous sur instagram !</p>
                 </div>
               </div>
             </div>
