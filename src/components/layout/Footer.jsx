@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import InstaIcon from "../ui/InstaIcon.jsx"
+
 export default function Footer() {
   return (
     <footer>
@@ -13,7 +15,11 @@ export default function Footer() {
           </p>
           <div className="footer-contact-row">📞 <a href="tel:+33467000000">+33 (0)4 67 00 00 00</a></div>
           <div className="footer-contact-row">✉️ <a href="mailto:contact@oliviersheritage.fr">contact@oliviersheritage.fr</a></div>
-          <div className="footer-contact-row">📍 Chemin des Oliviers, 34000 Montpellier</div>
+          <div className="footer-contact-row">✉️ <a href="mailto:contact@oliviersheritage.fr">contact@oliviersheritage.fr</a></div>
+          <div className="footer-contact-row"><a href="https://www.instagram.com/oliveraie_de_montpellier?igsh=eWgyeHI0amxoanNh">
+            <InstaIcon style={{width: "1rem", marginRight: ".4rem"}}/> rejoignez nous
+          </a></div>
+
         </div>
         <div className="footer-col">
           <h4>Navigation</h4>
