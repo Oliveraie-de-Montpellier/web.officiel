@@ -1,0 +1,61 @@
+SYNTHESE COMPLETE DU SITE WEB — OLIVERAIE DE MONTPELLIER
+Redige le 19 avril 2026
+─────────────────────────────────────────────────────────────────────────────────
+
+
+IDENTITE ET POSITIONNEMENT
+
+L'Oliveraie de Montpellier est un domaine oléicole familial situé au Chemin des Oliviers de l'Héritage, 34000 Montpellier, dans le département de l'Hérault en région Occitanie. L'identité de la marque repose sur une histoire transmise sur quatre générations, un domaine de 1,5 hectare comptant environ 500 oliviers centenaires, et une production d'huile d'olive Vierge Extra bénéficiant de l'Appellation d'Origine Protégée Languedoc. La marque se positionne sur le segment artisanal haut de gamme, en mettant en avant la traçabilité totale de sa production, l'ancrage territorial fort, le savoir-faire manuel et la démarche de certification biologique européenne actuellement en cours. L'ensemble du site est rédigé en français et s'adresse aussi bien aux particuliers qu'aux professionnels.
+
+
+ARCHITECTURE TECHNIQUE
+
+Le site est une application web monopage développée en React 18 avec le bundler Vite 5. La navigation entre les pages est gérée par React Router DOM version 6, ce qui permet des transitions fluides sans rechargement de la page. L'ensemble du style visuel est réalisé en CSS pur, sans recours à un framework d'interface tel que Tailwind ou Bootstrap. La gestion du panier d'achat est assurée par l'API Context de React, avec persistance des données dans le localStorage du navigateur. Le site ne dispose d'aucun backend ni d'aucune API réelle : les formulaires de contact, de réservation et de commande déclenchent uniquement des alertes simulées et n'envoient aucun email ni aucune donnée vers un serveur. Il n'existe pas non plus de système de paiement intégré, de sorte que la boutique en ligne reste non transactionnelle à ce stade.
+
+
+PAGE D'ACCUEIL
+
+La page d'accueil s'articule autour de plusieurs sections successives. Une section héro introduit la marque avec une représentation visuelle de l'équipe. Une section intitulée "Notre Héritage" développe l'histoire familiale du domaine, en évoquant les quatre générations de transmission, les 500 oliviers centenaires et la superficie du domaine. Une section "Valeurs" présente les quatre piliers de la marque : le savoir-faire artisanal, la certification biologique en cours d'obtention, l'ancrage local en Occitanie et la traçabilité complète de chaque lot produit. Une section cartographique illustre schématiquement les différentes zones d'activité du domaine : production, accueil des visiteurs, stockage, expédition et partenaires. Une carte de localisation renvoie vers Google Maps pour faciliter l'accès physique au domaine. La page se termine par un formulaire de contact comprenant des champs pour le nom, l'adresse email, le sujet du message et le message lui-même, dont la soumission est simulée sans envoi réel.
+
+
+BOUTIQUE EN LIGNE
+
+La boutique propose sept produits répartis en trois catégories filtrables accessibles via des boutons de filtrage dont les sélections sont reflétées dans les paramètres de l'URL. La catégorie "Vierge Extra" regroupe cinq produits : la Cuvée Arrière-Grand-Père vendue 18,50 euros en format 500 millilitres, la Récolte Hivernale à 15,90 euros en 500 millilitres, l'Huile Citron et Romarin à 16,50 euros en 250 millilitres, et l'Huile à la Truffe Noire à 28 euros en 100 millilitres. La catégorie "Editions Limitées" comprend le Prestige Centenaire, une bouteille numérotée à la main vendue 34 euros en format 250 millilitres. La catégorie "Coffrets" propose deux références : le Coffret Découverte à 42 euros et le Coffret Prestige Entreprise à 68 euros. Chaque fiche produit affiche le nom, la description, les étiquettes qualificatives, le prix, un sélecteur de quantité et un bouton d'ajout au panier. La boutique indique également les modalités de livraison : franco de port au-delà de 60 euros d'achat, retrait local sous 24 heures, et accès à plus de 5 000 points relais. Le panier d'achat est accessible depuis toutes les pages via un bouton fixe en bas à droite de l'écran affichant le nombre d'articles, ainsi que depuis la barre de navigation principale. Il s'ouvre sous forme de fenêtre modale listant les articles ajoutés, les quantités modifiables, le sous-total par ligne et le total général. La confirmation de commande est simulée sans intégration d'une solution de paiement réelle.
+
+
+VISITES DU DOMAINE
+
+La section visites présente deux formules principales ainsi qu'un espace dédié aux enfants, chacun disposant de sa propre sous-page détaillée. La Visite Découverte dure entre une heure et une heure trente, est facturée 15 euros par adulte et gratuite pour les enfants. Elle inclut un tour guidé du domaine, une démonstration du processus d'extraction mécanique à froid et une dégustation de trois huiles différentes. L'Expérience Complète dure entre deux heures et deux heures trente, est proposée à 50 euros par personne et inclut la visite intégrale du domaine, un atelier sensoriel de dégustation approfondie, un déjeuner producteur et l'offre d'une bouteille à emporter. L'Espace Enfants propose des activités pédagogiques adaptées aux plus jeunes pendant que leurs accompagnateurs participent à la visite adulte. Sur la page visites principale, un calendrier interactif permet de naviguer de mois en mois et de visualiser les jours disponibles ou déjà réservés. L'utilisateur peut sélectionner un créneau horaire parmi trois plages proposées — 9h-12h, 10h-13h ou 14h-17h — puis remplir un formulaire de réservation indiquant la date choisie, le créneau, le nombre de participants et les coordonnées du visiteur. Une politique d'annulation gratuite est mentionnée jusqu'à 48 heures avant la visite. La page présente également des recommandations de restaurants partenaires et des témoignages de visiteurs, tous deux sous forme de données fictives à ce stade.
+
+
+CERTIFICATIONS
+
+La page certifications présente les quatre labels qui encadrent ou qualifient la production du domaine. La classification Vierge Extra garantit une acidité inférieure ou égale à 0,8 gramme pour 100 grammes et une extraction exclusivement mécanique à froid. L'AOP Languedoc atteste de l'origine géographique protégée de la production. Le label AB Eurofeuille, certification biologique européenne, est présenté comme étant en cours d'obtention. Le label HVE, Haute Valeur Environnementale, complète le dispositif de garanties qualité et environnementales. Chaque label est accompagné de son badge graphique au format SVG.
+
+
+PARRAINAGE D'OLIVIERS
+
+La page parrainage propose aux visiteurs et clients de parrainer l'un des oliviers centenaires du domaine. Le programme associe à chaque arrain un numéro d'arbre identifié, un retour sous forme d'huile d'olive produite par cet arbre et un certificat de parrainage. Cette section reste peu développée en termes de contenu concret : le nombre d'arbres disponibles au parrainage, les modalités précises et les tarifs associés ne sont pas clairement détaillés.
+
+
+ESPACE PROFESSIONNELS
+
+La page dédiée aux professionnels propose trois gammes de produits et services à destination de la restauration, des épiceries fines, des importateurs et des entreprises. La gamme Huile Vierge Extra Professionnelle est disponible en conditionnements de 5 ou 20 litres pour la vente en gros. La Gamme Bio est présentée sous forme de précommande, avec une livraison envisagée à l'horizon 2027 une fois la certification obtenue. Les Coffrets Entreprise sont personnalisables avec une quantité minimale de commande de dix unités, pour une utilisation en cadeaux d'affaires. Un carrousel animé présente des logos de partenaires, actuellement sous forme de textes de substitution sans visuels réels. Un appel à l'action invite les professionnels à prendre contact pour discuter d'un partenariat. Les coordonnées dédiées au segment professionnel sont l'adresse email pro@oliviersheritage.fr.
+
+
+ASSISTANCE ET FAQ
+
+La page assistance regroupe une foire aux questions de huit entrées abordant les thèmes suivants : la définition et les critères de la classification Vierge Extra, le statut de la démarche de certification biologique, le fonctionnement du programme de parrainage d'oliviers, le système de numérotation des bouteilles, les conditions de conservation de l'huile d'olive, les modalités et délais de livraison, la politique de retour produits, et les conditions d'annulation des visites. La page intègre également un formulaire de contact dont la soumission est simulée comme sur les autres pages du site.
+
+
+NAVIGATION ET ELEMENTS TRANSVERSAUX
+
+La navigation principale est une barre fixe en haut de page dotée d'un effet de verre dépoli obtenu par le filtre CSS backdrop-filter. Elle comprend sept liens vers les sections principales du site — Accueil, Boutique, Visites, Parrainer un Olivier, Certifications, Professionnels et Assistance — ainsi que le bouton d'accès au panier avec un badge affichant le nombre d'articles. Sur mobile, la navigation se replie derrière un bouton hamburger. Le pied de page est organisé en quatre colonnes couvrant respectivement l'identité de la marque, les liens de navigation, les liens vers les produits et les mentions légales. La palette graphique du site repose sur des tons terreux associant des verts olive foncés et clairs, des dorés chauds et des crèmes, avec une typographie combinant Playfair Display pour les titres, Montserrat pour le corps de texte et Cormorant Garamond pour les accents typographiques. L'ensemble des représentations visuelles est actuellement assuré par des emojis en l'absence de photographies réelles.
+
+
+LIMITES FONCTIONNELLES ACTUELLES
+
+A ce stade de développement, le site constitue un prototype structurellement complet mais non opérationnel sur plusieurs aspects critiques. Aucun des formulaires présents sur le site n'envoie réellement de données : les soumissions de contact, de réservation de visite et de demande professionnelle se limitent à afficher une fenêtre d'alerte dans le navigateur. La boutique ne dispose d'aucun système de paiement intégré et la commande ne peut pas aboutir à une transaction réelle. Le calendrier de réservation des visites affiche des créneaux disponibles et réservés définis de manière statique dans le code, sans connexion à un système de gestion dynamique. Les logos partenaires sont des substituts textuels sans identité graphique réelle. Le logo de la marque est un SVG générique utilisé en remplacement d'une identité visuelle finalisée. Le contenu de la FAQ, bien que présent dans les données du projet, ne semble pas systématiquement intégré dans les pages de manière visible. Les coordonnées de contact affichées sur le site — numéro de téléphone et adresses email — sont des données fictives utilisées à des fins de maquette.
+
+
+FIN DU DOCUMENT
